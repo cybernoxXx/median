@@ -9,8 +9,10 @@ def median(numbers):
         numbers.sort()
         # If len is even
         if len(numbers) % 2 == 0:
+            # Should be used the integer division operator //, numbers[len(numbers) // 2] + numbers[len(numbers) // 2 - 1]
             numbersmedian = (numbers[int(len(numbers) / 2)] + numbers[int(len(numbers) / 2 - 1)]) / 2
         else:
+            # Should be used the integer division operator //, numbers[len(numbers) // 2]
             numbersmedian = numbers[int(len(numbers) / 2)]
 
         return numbersmedian
